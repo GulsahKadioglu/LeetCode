@@ -23,5 +23,7 @@
 """
 class Solution:
     def average(self, salary: List[int]) -> float:
+#The array.sort() sorts the items of a list in ascending order
         salary.sort()
+#we must exclude the minimum(salary[0]) and maximum(salary[-1]) from the average salary of employees
         return (sum(salary)-salary[0]-salary[-1])/(len(salary)-2)
