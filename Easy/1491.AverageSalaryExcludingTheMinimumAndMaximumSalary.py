@@ -20,10 +20,14 @@
     3 <= salary.length <= 100
     1000 <= salary[i] <= 106
     All the integers of salary are unique.
+    
 """
+
 class Solution:
     def average(self, salary: List[int]) -> float:
-#The array.sort() sorts the items of a list in ascending order
+        
+# The array.sort() sorts the items of a list in ascending order    
+# We must exclude the minimum(salary[0]) and maximum(salary[-1]) from the average salary of employees
+
         salary.sort()
-#we must exclude the minimum(salary[0]) and maximum(salary[-1]) from the average salary of employees
         return (sum(salary)-salary[0]-salary[-1])/(len(salary)-2)
