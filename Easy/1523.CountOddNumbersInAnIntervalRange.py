@@ -16,11 +16,14 @@
     
     Constraints:
     - 0 <= low <= high <= 10^9
+    
 """
+
 class Solution(object):
     def countOdds(self, low: int, high: int) -> int:
 
 #if the high and low integers are both even numbers ,then the count of odd numbers is r
+
     r=(high-low)//2
         if high%2==0 and low%2==0:
           return r
