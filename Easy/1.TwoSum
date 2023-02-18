@@ -34,6 +34,9 @@
     
 """
 
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    
 # Big-O notation describes the limiting behavior of a function when the argument tends towards a particular value or infinity.
 # It is used to classify algorithms by how their runtime or space requirements grow as the input size (n) grows.
 # There is a quadratic( O(n^2) ) time complexity when it has to perform a linear time operation for each value in the input data.
@@ -53,8 +56,6 @@
 # The dict function creates a dictionary.
 # The range function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
 
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
         map=dict()
 
         for i in range(len(nums)):
