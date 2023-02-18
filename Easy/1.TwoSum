@@ -54,7 +54,6 @@
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-    
         map=dict()
 
         for i in range(len(nums)):
@@ -64,5 +63,4 @@ class Solution:
             if number in map:
                 return [map[number],i]
             else:
-                map[remaining]=i         
-    
+                map[remaining]=i
