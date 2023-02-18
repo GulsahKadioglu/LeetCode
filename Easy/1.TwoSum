@@ -30,10 +30,13 @@
     Only one valid answer exists.
  
 
-    Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+    Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?
 """
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
     
-# We want to find two values whose sum is the target number in the given array and return their pointers.
+# Big-O notation describes the limiting behavior of a function when the argument tends towards a particular value or infinity.
+# It is used to classify algorithms by how their runtime or space requirements grow as the input size (n) grows.
+# There is a quadratic( O(n^2) ) time complexity when it has to perform a linear time operation for each value in the input data.
+# We want to find two values whose sum is the target number in the given array and return their indexs.
 
