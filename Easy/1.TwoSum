@@ -35,3 +35,5 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
     
+# We want to find two values whose sum is the target number in the given array and return their pointers.
+
