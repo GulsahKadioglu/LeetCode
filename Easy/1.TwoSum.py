@@ -51,7 +51,7 @@ class Solution:
 # what we're actually going to store is the number we need to add to that number to reach the target.
 # This will be the key we add to the map.
 
-# The dict function creates a dictionary.
+# The dict function creates a dictionary. It is used to store data values in key:value pairs.
 # The range function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
 
         map=dict()
