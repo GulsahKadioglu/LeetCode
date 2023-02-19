@@ -27,9 +27,9 @@
 class Solution:
      def search(self, nums: List[int], target: int) -> int:
    
-#Firstly we can define the right(r) and left(l) index of the array
-#Secondly if we know the integer in the middle(m) of the array, we can compare this with target
-#If the integer is smaller/bigger than the target, we can limit the integers of the array with new r and l integers
+# Firstly we can define the right(r) and left(l) index of the array
+# Secondly if we know the integer in the middle(m) of the array, we can compare this with target
+# If the integer is smaller/bigger than the target, we can limit the integers of the array with new r and l integers
 
       l=0
       r=len(nums)-1
