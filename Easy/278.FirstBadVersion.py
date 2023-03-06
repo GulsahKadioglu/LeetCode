@@ -38,12 +38,12 @@ class Solution:
 # We can use the binary search method(if we know the integer in the middle of the array we can compare this with isBadVersion(version))
 # If the right and left integers are smaller/bigger than the isBadVersion(version), we can limit the integers of the array with new right(r) and left(l) integers
 
-      l=0
-      r=n
-      while l<r:
-          m=l+(r-l)//2
-          if isBadVersion(m):
-          r=m
-          else:
-          l=m+1
-      return l
+        l = 0
+        r = n
+        while l < r:
+              m = l + (r-l) // 2
+              if isBadVersion(m):
+                 r = m
+              else:
+                 l = m + 1
+        return l
