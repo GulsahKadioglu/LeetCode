@@ -61,6 +61,6 @@ class Solution:
             remaining = target - nums[i]
             
             if number in map:
-                return [map[number], i]
+               return [map[number], i]
             else:
-                map[remaining] = i
+               map[remaining] = i
