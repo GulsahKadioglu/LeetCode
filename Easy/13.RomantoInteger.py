@@ -48,3 +48,28 @@
     It is guaranteed that s is a valid roman numeral in the range [1, 3999].
     
 """
+
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        
+# The corresponding Roman numeral letter is defined in a dictionary.
+        
+        r= {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    
+# A variable named 'result' is defined for the function to run.
+
+        result = 0
+       
+# The loop runs for each character.
+# If a character has a value less than the character after it,
+# that character's value is subtracted; otherwise, its value is appended.
+# As a result, the variable result will contain the decimal value of the Roman numeral equivalent in the string when the loop is complete.
+# i+1 for the last character of s cannot be checked because it exceeds the index range of s,
+# so r[s[i]] for the last character is added directly to the result.
+
+        for i in range (len(s)):
+            if i + 1 < len(s) and r[s[i]] < r[s[i + 1]]:
+                result = result - r[s[i]]
+            else:
+                result = result + r[s[i]]
+        return result
