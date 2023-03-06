@@ -33,14 +33,14 @@ class Solution:
 # Secondly if we know the integer in the middle(m) of the array, we can compare this with target
 # If the integer is smaller/bigger than the target, we can limit the integers of the array with new r and l integers
 
-      l=0
-      r=len(nums)-1
-      while l<=r:
-          m=l+(r-l)//2
-          if nums[m]>target:
-          r=m-1
-          elif num[m]<target:
-          l=m+1
-          else:
-          return m
-      return -1
+         l = 0
+         r = len(nums) - 1
+         while l <= r:
+               m = l +(r-l) // 2
+               if nums[m] > target:
+                  r = m - 1
+               elif num[m] < target:
+                  l = m + 1
+               else:
+               return m
+         return -1
