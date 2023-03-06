@@ -23,8 +23,8 @@ class Solution(object):
 
 #if the high and low integers are both even numbers ,then the count of odd numbers is r
 
-    r=(high-low)//2
-        if high%2==0 and low%2==0:
-          return r
+        r = (high - low) // 2
+        if high % 2 == 0 and low % 2 == 0:
+           return r
         else:
-            return r+1
+           return r + 1
