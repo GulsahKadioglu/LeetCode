@@ -54,13 +54,13 @@ class Solution:
 # The dict function creates a dictionary. It is used to store data values in key:value pairs. It is a collection which is unordered, changeable and indexed.
 # The range function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
 
-        map=dict()
+        map = dict()
 
         for i in range(len(nums)):
-            number=nums[i]
-            remaining=target-nums[i]
+            number = nums[i]
+            remaining = target - nums[i]
             
             if number in map:
-                return [map[number],i]
+                return [map[number], i]
             else:
-                map[remaining]=i
+                map[remaining] = i
