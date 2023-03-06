@@ -31,4 +31,4 @@ class Solution:
 # We can exclude the minimum(salary[0]) and maximum(salary[-1]) from the average salary of employees
 
         salary.sort()
-        return (sum(salary)-salary[0]-salary[-1])/(len(salary)-2)
+        return (sum(salary) - salary[0] - salary[-1]) / (len(salary) - 2)
