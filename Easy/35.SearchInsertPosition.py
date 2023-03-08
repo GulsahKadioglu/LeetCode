@@ -32,5 +32,19 @@
 
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
+    
+# Firstly we can define the right(r) and left(l) index of the array
+# Secondly if we know the integer in the middle(m) of the array, we can compare this with target
+# If the integer is smaller/bigger than the target, we can limit the integers of the array with new r and l integers
       
-      
+      left = 0
+         right = len(nums) - 1
+         while left <= right:
+               middle = left +(right-left) // 2
+               if nums[middle] > target:
+                  right = middle - 1
+               elif num[middle] < target:
+                  left = middle + 1
+               else:
+               return middle
+         return -1
