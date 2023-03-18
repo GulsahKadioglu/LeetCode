@@ -27,3 +27,7 @@
      s consists of parentheses only '()[]{}'.
      
 """
+class Solution:
+    def isValid(self, s: str) -> bool:
+     
+# O(n) because we're only having to go through every input character once.
