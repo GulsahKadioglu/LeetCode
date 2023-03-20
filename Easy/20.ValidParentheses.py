@@ -31,3 +31,16 @@ class Solution:
     def isValid(self, s: str) -> bool:
      
 # O(n) because we're only having to go through every input character once.
+     
+    stack = []
+    p = { ")" : "(", "]" : "[" , "}" : "{" }
+    
+    for c in s:
+        if c in p:
+           if stack and stack[-1] == p[c]:
+              stack.pop()
+           else:
+              return False
+           else:
+               stack.append(c)
+     return True if not stack else False
