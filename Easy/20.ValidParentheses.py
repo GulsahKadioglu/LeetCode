@@ -30,14 +30,17 @@
 class Solution:
     def isValid(self, s: str) -> bool:
      
+# We will check if a given string is a valid parenthesis string.
+#
+     
 # O(n) because we're only having to go through every input character once.
      
     stack = []
-    p = { ")" : "(", "]" : "[" , "}" : "{" }
+    closeToOpen = { ")" : "(", "]" : "[" , "}" : "{" }
     
-    for c in s:
-        if c in p:
-           if stack and stack[-1] == p[c]:
+    for c in s:                                           # Each character in the loop is assigned to the variable 'c'.
+        if c in closeToOpen:
+           if stack and stack[-1] == closeToOpen[c]:
               stack.pop()
            else:
               return False
