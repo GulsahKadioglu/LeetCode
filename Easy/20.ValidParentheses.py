@@ -46,3 +46,4 @@ class Solution:
         else:
            l.append(c)                  # If the 'c' is not in the 'd' dictionary, it adds it to the 'l' list.
     return not l                        # Returns 'True' if the 'l' list is empty, 'False' otherwise.
+
