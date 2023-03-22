@@ -45,5 +45,6 @@ class Solution:
               return False
         else:
            l.append(c)                  # If the 'c' is not in the 'd' dictionary, it adds it to the 'l' list.
-    return not l                        # Returns 'True' if the 'l' list is empty, 'False' otherwise.
-
+    return not l                        
+                                        # if list 'l' is empty, all brackets inside the loop are matched and it returns 'True'.
+                                        # Otherwise, an opening parenthesis is not closed and it returns 'False'.
