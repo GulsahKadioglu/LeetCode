@@ -42,6 +42,6 @@ class Solution:
               l.pop()                   # If so, it removes the last element from the list with the pop() method.
            else:                        # Otherwise, it returns False.
               return False
-           else:
-              l.append(c)              # If the 'c' is not in the 'd' dictionary, it adds it to the 'l' list.
-    return True if not l else False
+        else:
+           l.append(c)                  # If the 'c' is not in the 'd' dictionary, it adds it to the 'l' list.
+    return not l
