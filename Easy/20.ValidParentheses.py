@@ -33,15 +33,15 @@ class Solution:
 # We will check if a given string is a valid parenthesis string.
 # O(n) because we're only having to go through every input character once.
      
-    stack = []
+    l = []
     d = { ")" : "(", "]" : "[" , "}" : "{" }
     
-    for c in s:                                 # The loop to assign each character of array named s in turn to 'c'.
-        if c in d:                              # Checks if the 'c' is in the 'd' dictionary. If not, it will skip processing and continue processing other characters.
-           if stack and stack[-1] == d[c]:      # Checks whether the last element of the 'stack' list corresponds to the opening parenthesis in the 'd' dictionary.
-              stack.pop()                       # If so, it removes the last element from the list with the pop() method.
-           else:                                # Otherwise, it returns False.
+    for c in s:                         # The loop to assign each character of array named s in turn to 'c'.
+        if c in d:                      # Checks if the 'c' is in the 'd' dictionary. If not, it will skip processing and continue processing other characters.
+           if l and l[-1] == d[c]:      # Checks whether the last element of the 'l' list corresponds to the opening parenthesis in the 'd' dictionary.
+              l.pop()                   # If so, it removes the last element from the list with the pop() method.
+           else:                        # Otherwise, it returns False.
               return False
            else:
-               stack.append(c)                  # If the 'c' is not in the 'd' dictionary, it adds it to the 'stack' list.
-     return True if not stack else False
+              l.append(c)              # If the 'c' is not in the 'd' dictionary, it adds it to the 'l' list.
+    return True if not l else False
