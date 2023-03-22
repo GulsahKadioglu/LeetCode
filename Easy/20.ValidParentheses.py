@@ -27,6 +27,7 @@
      s consists of parentheses only '()[]{}'.
      
 """
+
 class Solution:
     def isValid(self, s: str) -> bool:
      
