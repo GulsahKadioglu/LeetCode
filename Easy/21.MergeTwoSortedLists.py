@@ -35,3 +35,14 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        
+# Dummy Head Node: One of the problems in dealing with pointer(variables that hold the memory address of another variable)
+# based ordered lists is writing code to take care of special cases. If we want to insert a node in an ordered linked list,
+# we must take care of the 'special case'* of inserting this node in the beginning of the list. 
+# *If a node is inserted into the beginning of the list, the pointer indicating the beginning of the list, head,  must be changed.
+# ıf we want to delete a particular node, we must again also write code to handle the special case of deleting the first node in the list.
+
+        dummy = ListNode()
+        head = dummy
+        
+        
