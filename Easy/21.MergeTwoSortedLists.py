@@ -36,6 +36,9 @@
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         
+# Instances of the 'ListNode' class represent the nodes of a linked list. The '__init__()' method of the class is used to create these instances.
+# This method defines the 'val' property of the node and the 'next' property that points to the next node.
+        
 # Dummy Head Node: One of the problems in dealing with pointer(variables that hold the memory address of another variable)
 # based ordered lists is writing code to take care of special cases. If we want to insert a node in an ordered linked list,
 # we must take care of the 'special case'* of inserting this node in the beginning of the list. 
