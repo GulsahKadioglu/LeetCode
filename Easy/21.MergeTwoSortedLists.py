@@ -45,22 +45,22 @@ class Solution:
 # *If a node is inserted into the beginning of the list, the pointer indicating the beginning of the list, head,  must be changed.
 # ıf we want to delete a particular node, we must again also write code to handle the special case of deleting the first node in the list.
 
-        dummy = ListNode()
-        head = dummy
+        head = ListNode()
+        tail = head
         
         while list1 and list2:
             if list1.val < list2.val:
-                head.next = list1
+                tail.next = list1
                 list1 = list1.next
             else:
-                head.next = list2
+                tail.next = list2
                 list2 = list2.next
-                head = head.next
+                tail = tail.next
                 
         if list1:
-            head.next = list1
+            tail.next = list1
         elif list2:
-            head.next = list2
+            tail.next = list2
             
-        return dummy.next
+        return head.next
      
