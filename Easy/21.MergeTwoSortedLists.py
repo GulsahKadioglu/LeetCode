@@ -39,11 +39,13 @@ class Solution:
 # Instances of the 'ListNode' class represent the nodes of a linked list. The '__init__()' method of the class is used to create these instances.
 # This method defines the 'val' property of the node and the 'next' property that points to the next node.
         
-# Dummy Head Node: One of the problems in dealing with pointer(variables that hold the memory address of another variable)
+# Dummy Head Node: One of the problems in dealing with pointer(variables that hold the memory address of another variable)# For a linked list, we use a head record to keep the location of the head and sometimes a tail record to keep that of the tail, 
 # based ordered lists is writing code to take care of special cases. If we want to insert a node in an ordered linked list,
 # we must take care of the 'special case'* of inserting this node in the beginning of the list. 
 # *If a node is inserted into the beginning of the list, the pointer indicating the beginning of the list, head,  must be changed.
 # ıf we want to delete a particular node, we must again also write code to handle the special case of deleting the first node in the list.
+# For a linked list, we use a head record to keep the location of the head and sometimes a tail record to keep that of the tail, 
+# but we usually don't use other records to keep location information of other nodes in the linked list since we can find them in the previous node.
 
         head = ListNode()
         tail = head
