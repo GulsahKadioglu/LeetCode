@@ -31,3 +31,15 @@
 
 class Solution:
     def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
+        
+# Big-O notation describes the limiting behavior of a function when the argument tends towards a particular value or infinity.
+# It is used to classify algorithms by how their runtime or space requirements grow as the input size (n) grows.
+# Big-O is a concept used to calculate how fast the algorithm works and to evaluate the efficiency of the algorithm.
+# All of the operations in the problem have O(n) time complexity because each list element will be visited only once.
+
+# Sets are collections of unique elements, meaning that they can't have duplicates. 
+# This property makes sets useful in efficiently removing duplicate values from a list or tuple by converting them to a set and then back to a list or tuple. 
+
+        num1, num2 = set(nums1), set(nums2)
+        return [num1 - num2, num2 - num1]
+    
